@@ -9,7 +9,7 @@
 # ---------- base: shared bootstrap for every variant ----------
 # Digest-pinned for reproducibility (re-resolve via `docker buildx imagetools
 # inspect` when bumping); BASE_REF/SETUP_BASE overridden for non-Ubuntu distros.
-ARG BASE_REF=ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+ARG BASE_REF=ubuntu:24.04@sha256:68ee22004a9109b44973313b02ff7b1de250f1de0f5ecb628d73f579aaff33ac
 FROM ${BASE_REF} AS base
 
 ENV DEBIAN_FRONTEND=noninteractive
